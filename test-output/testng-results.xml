@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="35404" started-at="2020-03-04T10:49:47Z" finished-at="2020-03-04T10:50:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="35404" started-at="2020-03-04T10:49:47Z" finished-at="2020-03-04T10:50:22Z">
+      <class name="com.test.SmokeTest">
+        <test-method status="PASS" signature="openBrowser()[pri:0, instance:com.test.SmokeTest@46d56d67]" name="openBrowser" is-config="true" duration-ms="23653" started-at="2020-03-04T10:49:47Z" finished-at="2020-03-04T10:50:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openBrowser -->
+        <test-method status="PASS" signature="verifySignIn()[pri:0, instance:com.test.SmokeTest@46d56d67]" name="verifySignIn" duration-ms="11457" started-at="2020-03-04T10:50:10Z" finished-at="2020-03-04T10:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignIn -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.test.SmokeTest@46d56d67]" name="closeBrowser" is-config="true" duration-ms="250" started-at="2020-03-04T10:50:22Z" finished-at="2020-03-04T10:50:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- com.test.SmokeTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
