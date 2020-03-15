@@ -6,8 +6,6 @@
       <class name="com.test.SmokeTest">
         <methods>
           <include name="verifySignIn"/>
-          <include name="openBrowser"/>
-          <include name="closeBrowser"/>
         </methods>
       </class> <!-- com.test.SmokeTest -->
     </classes>
