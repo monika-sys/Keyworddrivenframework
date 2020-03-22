@@ -2,15 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="28908" started-at="2020-03-09T20:22:39Z" finished-at="2020-03-09T20:23:08Z">
+  <suite name="Default suite" duration-ms="58479" started-at="2020-03-22T08:28:22Z" finished-at="2020-03-22T08:29:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="28908" started-at="2020-03-09T20:22:39Z" finished-at="2020-03-09T20:23:08Z">
+    <test name="Default test" duration-ms="58479" started-at="2020-03-22T08:28:22Z" finished-at="2020-03-22T08:29:21Z">
       <class name="com.test.SmokeTest">
-        <test-method status="PASS" signature="verifySignIn()[pri:0, instance:com.test.SmokeTest@c038203]" name="verifySignIn" duration-ms="28821" started-at="2020-03-09T20:22:39Z" finished-at="2020-03-09T20:23:08Z">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@46d56d67]" name="launchUrl" is-config="true" duration-ms="44703" started-at="2020-03-22T08:28:22Z" finished-at="2020-03-22T08:29:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifySignIn -->
+        </test-method> <!-- launchUrl -->
+        <test-method status="PASS" signature="dropDownSelect()[pri:1, instance:com.test.SmokeTest@46d56d67]" name="dropDownSelect" duration-ms="8420" started-at="2020-03-22T08:29:07Z" finished-at="2020-03-22T08:29:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dropDownSelect -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@46d56d67]" name="tearDown" is-config="true" duration-ms="5233" started-at="2020-03-22T08:29:15Z" finished-at="2020-03-22T08:29:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.test.SmokeTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
