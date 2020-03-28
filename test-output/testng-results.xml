@@ -1,21 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="58479" started-at="2020-03-22T08:28:22Z" finished-at="2020-03-22T08:29:21Z">
+  <suite name="Default suite" duration-ms="79761" started-at="2020-03-28T16:37:03Z" finished-at="2020-03-28T16:38:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="58479" started-at="2020-03-22T08:28:22Z" finished-at="2020-03-22T08:29:21Z">
+    <test name="Default test" duration-ms="79761" started-at="2020-03-28T16:37:03Z" finished-at="2020-03-28T16:38:23Z">
       <class name="com.test.SmokeTest">
-        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@46d56d67]" name="launchUrl" is-config="true" duration-ms="44703" started-at="2020-03-22T08:28:22Z" finished-at="2020-03-22T08:29:07Z">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@ae45eb6]" name="launchUrl" is-config="true" duration-ms="34971" started-at="2020-03-28T16:37:03Z" finished-at="2020-03-28T16:37:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method status="PASS" signature="dropDownSelect()[pri:1, instance:com.test.SmokeTest@46d56d67]" name="dropDownSelect" duration-ms="8420" started-at="2020-03-22T08:29:07Z" finished-at="2020-03-22T08:29:15Z">
+        <test-method status="PASS" signature="verifytitle()[pri:1, instance:com.test.SmokeTest@ae45eb6]" name="verifytitle" duration-ms="47" started-at="2020-03-28T16:37:38Z" finished-at="2020-03-28T16:37:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifytitle -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@ae45eb6]" name="tearDown" is-config="true" duration-ms="937" started-at="2020-03-28T16:37:38Z" finished-at="2020-03-28T16:37:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@ae45eb6]" name="launchUrl" is-config="true" duration-ms="31195" started-at="2020-03-28T16:37:39Z" finished-at="2020-03-28T16:38:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method status="PASS" signature="dropDownSelect()[pri:2, instance:com.test.SmokeTest@ae45eb6]" name="dropDownSelect" duration-ms="11943" started-at="2020-03-28T16:38:10Z" finished-at="2020-03-28T16:38:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- dropDownSelect -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@46d56d67]" name="tearDown" is-config="true" duration-ms="5233" started-at="2020-03-22T08:29:15Z" finished-at="2020-03-22T08:29:21Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@ae45eb6]" name="tearDown" is-config="true" duration-ms="620" started-at="2020-03-28T16:38:22Z" finished-at="2020-03-28T16:38:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
