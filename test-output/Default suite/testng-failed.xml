@@ -6,8 +6,9 @@
       <class name="com.test.SmokeTest">
         <methods>
           <include name="launchUrl"/>
-          <include name="verifySignIn"/>
-          <include name="closeBrowser"/>
+          <include name="tearDown"/>
+          <include name="dropDownSelect"/>
+          <include name="verifytitle"/>
         </methods>
       </class> <!-- com.test.SmokeTest -->
     </classes>

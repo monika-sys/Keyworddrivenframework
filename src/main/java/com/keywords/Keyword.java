@@ -1,15 +1,26 @@
 package com.keywords;
 
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import ru.yandex.qatools.ashot.AShot;
+import ru.yandex.qatools.ashot.Screenshot;
+import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class Keyword {
 
@@ -150,5 +161,45 @@ public class Keyword {
 
 	public static void closeAllBrowser() {
 		Constants.driver.quit();
+	}
+
+	public static String getPageTitle() {
+		return Constants.driver.getTitle();
+	}
+
+	public static void generateLog() {
+		Constants.log = Logger.getLogger(Keyword.class);
+		// Constants.log.info("******************************Starting
+		// Chrome*********************************");
+
+	}
+
+	public static void checkBox() {
+
+	}
+
+	public void mouseHover(By locator) {
+		Constants.action = new Actions(Constants.driver);
+		WebElement element = driver.findElement(locator);
+		Constants.action.moveToElement(element).perform();
+
+	}
+
+	public static void takeScreenShot() {
+		Constants.ashot = new AShot();
+		Constants.ashot.shootingStrategy(ShootingStrategies.viewportPasting(3000));
+		Screenshot sc = Constants.ashot.takeScreenshot(driver);
+		BufferedImage image = sc.getImage();
+		try {
+			ImageIO.write(image, "JPG", new File(
+					"C:\\Users\\monika hase\\eclipse-workspace\\KeywordDriven\\src\\main\\resources\\Screenshots\\UsingAshot.jpg"));
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	public void handleAlert() {
+
 	}
 }

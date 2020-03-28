@@ -20,7 +20,7 @@ public class PropertiesFile {
 		String value = null;
 		try {
 			Constants.fis = new FileInputStream(
-					"C:\\Users\\monika hase\\eclipse-workspace\\KeywordDriven\\input\\ObjectRepository.properties");
+					"C:\\Users\\monika hase\\eclipse-workspace\\KeywordDriven\\src\\main\\resources\\input\\ObjectRepository.properties");
 			Constants.prop = new Properties();
 			Constants.prop.load(Constants.fis);
 			value = Constants.prop.getProperty(key);
@@ -68,7 +68,7 @@ public class PropertiesFile {
 		String[] value = null;
 		try {
 			Constants.fis = new FileInputStream(
-					"C:\\Users\\monika hase\\eclipse-workspace\\KeywordDriven\\input\\ObjectRepository.properties");
+					"C:\\Users\\monika hase\\eclipse-workspace\\KeywordDriven\\src\\main\\resources\\input\\ObjectRepository.properties");
 			Constants.prop = new Properties();
 			Constants.prop.load(Constants.fis);
 			String part = Constants.prop.getProperty(key);
