@@ -1,33 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="79761" started-at="2020-03-28T16:37:03Z" finished-at="2020-03-28T16:38:23Z">
+  <suite name="Default suite" duration-ms="116009" started-at="2020-03-29T08:47:39Z" finished-at="2020-03-29T08:49:35Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="79761" started-at="2020-03-28T16:37:03Z" finished-at="2020-03-28T16:38:23Z">
+    <test name="Default test" duration-ms="116009" started-at="2020-03-29T08:47:39Z" finished-at="2020-03-29T08:49:35Z">
       <class name="com.test.SmokeTest">
-        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@ae45eb6]" name="launchUrl" is-config="true" duration-ms="34971" started-at="2020-03-28T16:37:03Z" finished-at="2020-03-28T16:37:38Z">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@47c62251]" name="launchUrl" is-config="true" duration-ms="27465" started-at="2020-03-29T08:47:39Z" finished-at="2020-03-29T08:48:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method status="PASS" signature="verifytitle()[pri:1, instance:com.test.SmokeTest@ae45eb6]" name="verifytitle" duration-ms="47" started-at="2020-03-28T16:37:38Z" finished-at="2020-03-28T16:37:38Z">
+        <test-method status="PASS" signature="verifytitleTest()[pri:1, instance:com.test.SmokeTest@47c62251]" name="verifytitleTest" duration-ms="65" started-at="2020-03-29T08:48:07Z" finished-at="2020-03-29T08:48:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifytitle -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@ae45eb6]" name="tearDown" is-config="true" duration-ms="937" started-at="2020-03-28T16:37:38Z" finished-at="2020-03-28T16:37:39Z">
+        </test-method> <!-- verifytitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@47c62251]" name="tearDown" is-config="true" duration-ms="2711" started-at="2020-03-29T08:48:07Z" finished-at="2020-03-29T08:48:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@ae45eb6]" name="launchUrl" is-config="true" duration-ms="31195" started-at="2020-03-28T16:37:39Z" finished-at="2020-03-28T16:38:10Z">
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@47c62251]" name="launchUrl" is-config="true" duration-ms="24727" started-at="2020-03-29T08:48:09Z" finished-at="2020-03-29T08:48:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchUrl -->
-        <test-method status="PASS" signature="dropDownSelect()[pri:2, instance:com.test.SmokeTest@ae45eb6]" name="dropDownSelect" duration-ms="11943" started-at="2020-03-28T16:38:10Z" finished-at="2020-03-28T16:38:22Z">
+        <test-method status="PASS" signature="dropDownSelectTest()[pri:2, instance:com.test.SmokeTest@47c62251]" name="dropDownSelectTest" duration-ms="8281" started-at="2020-03-29T08:48:34Z" finished-at="2020-03-29T08:48:42Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- dropDownSelect -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@ae45eb6]" name="tearDown" is-config="true" duration-ms="620" started-at="2020-03-28T16:38:22Z" finished-at="2020-03-28T16:38:23Z">
+        </test-method> <!-- dropDownSelectTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@47c62251]" name="tearDown" is-config="true" duration-ms="702" started-at="2020-03-29T08:48:42Z" finished-at="2020-03-29T08:48:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@47c62251]" name="launchUrl" is-config="true" duration-ms="24011" started-at="2020-03-29T08:48:43Z" finished-at="2020-03-29T08:49:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method status="PASS" signature="verifyLogoTest()[pri:3, instance:com.test.SmokeTest@47c62251]" name="verifyLogoTest" duration-ms="483" started-at="2020-03-29T08:49:07Z" finished-at="2020-03-29T08:49:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@47c62251]" name="tearDown" is-config="true" duration-ms="1953" started-at="2020-03-29T08:49:08Z" finished-at="2020-03-29T08:49:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="launchUrl()[pri:0, instance:com.test.SmokeTest@47c62251]" name="launchUrl" is-config="true" duration-ms="23466" started-at="2020-03-29T08:49:10Z" finished-at="2020-03-29T08:49:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchUrl -->
+        <test-method status="PASS" signature="screenCaptureTest()[pri:4, instance:com.test.SmokeTest@47c62251]" name="screenCaptureTest" duration-ms="1197" started-at="2020-03-29T08:49:33Z" finished-at="2020-03-29T08:49:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- screenCaptureTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.test.SmokeTest@47c62251]" name="tearDown" is-config="true" duration-ms="835" started-at="2020-03-29T08:49:34Z" finished-at="2020-03-29T08:49:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
