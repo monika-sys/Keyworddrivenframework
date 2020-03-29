@@ -7,8 +7,7 @@
         <methods>
           <include name="launchUrl"/>
           <include name="tearDown"/>
-          <include name="dropDownSelect"/>
-          <include name="verifytitle"/>
+          <include name="screenCaptureTest"/>
         </methods>
       </class> <!-- com.test.SmokeTest -->
     </classes>

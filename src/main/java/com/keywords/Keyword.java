@@ -1,8 +1,13 @@
 package com.keywords;
 
+import java.awt.AWTException;
+import java.awt.Rectangle;
+import java.awt.Robot;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 import javax.imageio.ImageIO;
 
@@ -18,9 +23,6 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import ru.yandex.qatools.ashot.AShot;
-import ru.yandex.qatools.ashot.Screenshot;
-import ru.yandex.qatools.ashot.shooting.ShootingStrategies;
 
 public class Keyword {
 
@@ -174,8 +176,12 @@ public class Keyword {
 
 	}
 
-	public static void checkBox() {
-
+	public static boolean elementIsDisplayed(String locatorName, String locatorValue) {
+		if (getWebElement(locatorName, locatorValue).isDisplayed()) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 	public void mouseHover(By locator) {
@@ -185,14 +191,23 @@ public class Keyword {
 
 	}
 
+	public static String timestamp() {
+		return new SimpleDateFormat("yyyy-MM-dd,HH-mm-ss").format(new Date());
+	}
+
 	public static void takeScreenShot() {
-		Constants.ashot = new AShot();
-		Constants.ashot.shootingStrategy(ShootingStrategies.viewportPasting(3000));
-		Screenshot sc = Constants.ashot.takeScreenshot(driver);
-		BufferedImage image = sc.getImage();
 		try {
-			ImageIO.write(image, "JPG", new File(
-					"C:\\Users\\monika hase\\eclipse-workspace\\KeywordDriven\\src\\main\\resources\\Screenshots\\UsingAshot.jpg"));
+			Constants.robo = new Robot();
+			Rectangle rect = new Rectangle();
+			rect.setRect(0, 0, 1000, 1000);
+
+			BufferedImage image = Constants.robo.createScreenCapture(rect);
+
+			ImageIO.write(image, "PNG", new File(
+					"C:\\Users\\monika hase\\eclipse-workspace\\KeywordDriven\\src\\main\\resources\\Screenshots\\screenshot"
+							+ timestamp() + ".png"));
+		} catch (AWTException e) {
+			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -200,6 +215,10 @@ public class Keyword {
 	}
 
 	public void handleAlert() {
+
+	}
+
+	public static void checkBox() {
 
 	}
 }

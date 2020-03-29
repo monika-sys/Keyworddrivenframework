@@ -1,5 +1,6 @@
 package com.keywords;
 
+import java.awt.Robot;
 import java.io.FileInputStream;
 import java.util.Properties;
 
@@ -20,4 +21,5 @@ public class Constants {
 	public static Actions action;
 	public static Alert alert;
 	public static AShot ashot;
+	public static Robot robo;
 }
